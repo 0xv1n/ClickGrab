@@ -287,7 +287,7 @@
                 <div id="site_{{ loop.index }}-code" class="tab-content">
                     <h5>Malicious Code Sample</h5>
                     {% if url.malicious_code %}
-                    <pre class="html-content" id="code-content-{{ loop.index }}">{{ url.malicious_code }}</pre>
+                    <pre class="html-content" id="code-content-{{ loop.index }}" style="word-wrap: break-word;">{{url.malicious_code }}</pre>
                     <div class="alert alert-danger mt-2">
                         <i class="fas fa-exclamation-triangle"></i> Warning: This code is malicious and should not be executed
                     </div>
